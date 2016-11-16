@@ -34,6 +34,7 @@ exit
 net use %mapto% /delete
 net use %mapto% %clipath% %pw% /user:%usr% /savecred
 if %fwset%==true goto setfirewall
+goto exit
 :srv
 net share %sname% /delete
 if %usr%==null goto doshare
